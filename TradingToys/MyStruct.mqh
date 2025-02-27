@@ -2,7 +2,7 @@
 #define __MY_STRUCT__
 
 
-
+/// @brief Dữ liệu thời gian còn lại theo TimeFrame
 struct CloseCandleInfo
 {
    int M3;
@@ -17,9 +17,10 @@ struct CloseCandleInfo
 
 struct SwingInfo
 {
-   bool IsHigh;
-   double Price;
-   datetime Time;
-}
+   bool IsHigh;   // True: High - Flase: Low
+   double Shadow; // râu nến
+   double Close;  // Giá đóng cửa
+   datetime Time; // Time
+};
 
 #endif
